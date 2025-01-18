@@ -77,3 +77,35 @@ class Heap {
         return this.heap.length;
     }
 }
+
+const maxHeap = new Heap("max");
+
+// Insert elements into the heap
+maxHeap.insert(10);
+maxHeap.insert(20);
+maxHeap.insert(5);
+
+// Peek at the root element
+console.log(maxHeap.peek()); // Output: 20
+
+// Extract the root element (max)
+console.log(maxHeap.extract()); // Output: 20
+console.log(maxHeap.peek()); // Output: 10
+
+// Get the size of the heap
+console.log(maxHeap.size()); // Output: 2
+
+// Initialize a Min Heap
+const minHeap = new Heap("min");
+
+// Insert elements into the min heap
+minHeap.insert(10);
+minHeap.insert(20);
+minHeap.insert(5);
+
+// Peek at the root element
+console.log(minHeap.peek()); // Output: 5
+
+// Extract the root element (min)
+console.log(minHeap.extract()); // Output: 5
+console.log(minHeap.peek()); // Output: 10
